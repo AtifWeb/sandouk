@@ -44,7 +44,7 @@ header nav > * + * {
   margin-left: 2rem;
 }
 header nav .button {
-  background-color: #0088ff;
+  background: linear-gradient(to right, #07274f, #0279f6);
   padding: 0.8rem 2rem;
   border-radius: 99px;
 }
