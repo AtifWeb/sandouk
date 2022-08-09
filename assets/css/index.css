@@ -378,8 +378,37 @@ main .buttons_wrapper button {
   width: 650px;
   margin: auto;
   margin-top: 2rem;
+  margin-bottom: 3rem;
 }
 /* .lenged  */
-.lenged li > * {
+.lenged li > iframe {
   width: 100%;
+  z-index: -1;
+  height: 300px;
+}
+.lenged .splide__pagination {
+  bottom: -2em !important;
+}
+.splide__pagination__page {
+  background-color: #0088ff !important;
+}
+.lenged .button_wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+.lenged .button_wrapper a {
+  background-color: #0088ff;
+  padding: 0.8rem 2rem;
+  border-radius: 99px;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  height: 60px;
+  align-items: center;
+  display: flex;
+
+  cursor: pointer;
 }
