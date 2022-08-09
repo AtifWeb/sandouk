@@ -8,11 +8,19 @@
 main {
   color: #fff;
   padding: 6rem 0rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
 }
-
+main .presentation .d_flex {
+  display: flex;
+  align-items: center;
+}
+main .presentation img {
+  width: 250px;
+}
 main h1 {
-  text-align: center;
-  font-size: 80px;
+  font-size: 60px;
 }
 
 main h1 span {
@@ -20,8 +28,17 @@ main h1 span {
 }
 main p {
   text-align: center;
-  margin-top: 1rem;
-  font-size: 30px;
+  margin-top: 3rem;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+}
+main p span {
+  color: #0088ff;
+}
+main > img {
+  width: 70%;
+  justify-self: center;
 }
 main .buttons_wrapper {
   display: flex;
@@ -336,6 +353,11 @@ main .buttons_wrapper button {
   display: flex;
 
   cursor: pointer;
+  transition: 0.3s ease all;
+}
+.protcol_cards_wrapper .card a:hover {
+  background-color: #0366ce;
+  color: #fff;
 }
 .eco_system {
   padding: 10rem 0rem;
