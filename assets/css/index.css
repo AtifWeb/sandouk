@@ -1,15 +1,21 @@
 body {
   overflow-x: hidden;
 }
+.bg_0 {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+
+  z-index: -1;
+}
 .bg_1 {
   background: linear-gradient(to right, #07274f, #0279f6);
   position: absolute;
   right: 0px;
   width: 100%;
-  top: 660px;
+  top: 760px;
   z-index: -1;
-  width: 100%;
-  height: 1450px;
+  height: 1250px;
 }
 .bg_4 {
   background: linear-gradient(to right, #07274f, #0279f6);
@@ -21,6 +27,7 @@ body {
   z-index: -1;
   width: 100%;
   height: 1850px;
+  display: none;
 }
 .bg_2 {
   border-radius: 50%;
@@ -46,6 +53,7 @@ body {
   width: 60vw;
   height: 60vw;
 }
+
 .bg_1 img:last-child,
 .bg_4 img:last-child {
   position: absolute;
@@ -66,14 +74,76 @@ main .presentation .d_flex {
 }
 main .presentation img {
   width: 250px;
+  margin-left: 10px;
+}
+main .presentation img.stagger2 {
+  opacity: 1;
+}
+main .button_wrapper {
+  display: flex;
+  justify-content: center;
+}
+main .button_wrapper button {
+  background: linear-gradient(to right, #07274f, #0279f6);
+  padding: 1.2rem 2rem;
+  border-radius: 99px;
+  border: none;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+
+  cursor: pointer;
+  transition: 0.3s ease all;
+  margin-top: 2rem;
+  animation: 2s RotateButtonMain linear;
+}
+
+@keyframes RotateButtonMain {
+  0% {
+    transform: rotate(20deg);
+  }
+  10% {
+    transform: rotate(-20deg);
+  }
+  20% {
+    transform: rotate(20deg);
+  }
+  30% {
+    transform: rotate(-20deg);
+  }
+  40% {
+    transform: rotate(20deg);
+  }
+  50% {
+    transform: rotate(-20deg);
+  }
+  60% {
+    transform: rotate(20deg);
+  }
+  70% {
+    transform: rotate(-20deg);
+  }
+  80% {
+    transform: rotate(20deg);
+  }
+  90% {
+    transform: rotate(-20deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+main .button_wrapper button:hover {
+  filter: brightness(150%);
 }
 main h1 {
   font-size: 60px;
+  letter-spacing: -7px;
 }
 
-main h1 span {
-  color: #0088ff;
-}
 main p {
   text-align: center;
   margin-top: 3rem;
@@ -81,12 +151,28 @@ main p {
   font-size: 40px;
   line-height: 50px;
 }
-main p span {
+main p .blue {
   color: #0088ff;
+}
+main span {
+  display: inline-block;
+}
+main span.stagger,
+main h1 span.stagger1 {
+  transform: translateY(-20px);
+  opacity: 0;
+}
+main span.space {
+  margin: 0rem 5px;
+  background-color: red;
+  /* width: 10px; */
 }
 main > img {
   width: 70%;
   justify-self: center;
+}
+main > img.stagger3 {
+  opacity: 0;
 }
 main .buttons_wrapper {
   display: flex;
@@ -421,10 +507,9 @@ main .buttons_wrapper button {
   margin-top: 2rem;
 }
 .eco_system .grid_wrapper {
-  background-image: url("../img/3-removebg-preview\ \(2\).png"),
-    url("../img/Waypaylogos/4_no_bg_croped.png");
+  background-image: url("../img/3.png");
   /* height: 950px; */
-  background-position: center 20%, center 32%;
+  background-position: center 20%;
   background-size: 550px, 150px;
   background-repeat: no-repeat;
   margin-top: 6rem;
@@ -433,16 +518,25 @@ main .buttons_wrapper button {
   grid-gap: 2rem;
   grid-row-gap: 6rem;
 }
+
 .eco_system .grid_wrapper img {
-  width: 350px;
+  width: 200px;
+  margin-left: 5rem;
 }
 .eco_system .grid_wrapper > *:nth-child(even) {
   text-align: right;
+}
+.eco_system .grid_wrapper > *:nth-child(even) img {
+  margin-right: 4.5rem;
 }
 .eco_system .grid_wrapper > *:nth-child(5) {
   grid-column: span 2;
   text-align: center;
   margin-top: 5rem;
+}
+.eco_system .grid_wrapper > *:nth-child(5) img {
+  text-align: center;
+  margin: 0px;
 }
 .eco_system .grid_wrapper p {
   color: #fff;

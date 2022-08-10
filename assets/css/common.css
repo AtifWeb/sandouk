@@ -20,11 +20,148 @@ body {
   background-color: #000;
   font-family: "Poppins", sans-serif;
 }
+.telegram_button {
+  background: linear-gradient(to right, #07274f, #0279f6);
+  padding: 1.2rem 2rem;
+  border-radius: 99px;
+  border: none;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  bottom: 40px;
+  right: 5%;
+  z-index: 888;
+  transform: translateX(5%);
+  cursor: pointer;
+  transition: 0.3s ease all;
+  animation: 2s RotateButton2 linear;
+}
+.Presale_button {
+  background: linear-gradient(to right, #07274f, #0279f6);
+  padding: 1.2rem 2rem;
+  border-radius: 99px;
+  border: none;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  bottom: 40px;
+  left: 5%;
+  z-index: 888;
+  transform: translateX(-5%);
+  cursor: pointer;
+  transition: 0.3s ease all;
+  animation: 2s RotateButton linear;
+}
+
+@keyframes RotateButton {
+  0% {
+    transform: translateX(-5%) rotate(20deg);
+  }
+  10% {
+    transform: translateX(-5%) rotate(-20deg);
+  }
+  20% {
+    transform: translateX(-5%) rotate(20deg);
+  }
+  30% {
+    transform: translateX(-5%) rotate(-20deg);
+  }
+  40% {
+    transform: translateX(-5%) rotate(20deg);
+  }
+  50% {
+    transform: translateX(-5%) rotate(-20deg);
+  }
+  60% {
+    transform: translateX(-5%) rotate(20deg);
+  }
+  70% {
+    transform: translateX(-5%) rotate(-20deg);
+  }
+  80% {
+    transform: translateX(-5%) rotate(20deg);
+  }
+  90% {
+    transform: translateX(-5%) rotate(-20deg);
+  }
+
+  100% {
+    transform: translateX(-5%) rotate(0deg);
+  }
+}
+@keyframes RotateButton2 {
+  0% {
+    transform: translateX(5%) rotate(20deg);
+  }
+  10% {
+    transform: translateX(5%) rotate(-20deg);
+  }
+  20% {
+    transform: translateX(5%) rotate(20deg);
+  }
+  30% {
+    transform: translateX(5%) rotate(-20deg);
+  }
+  40% {
+    transform: translateX(5%) rotate(20deg);
+  }
+  50% {
+    transform: translateX(5%) rotate(-20deg);
+  }
+  60% {
+    transform: translateX(5%) rotate(20deg);
+  }
+  70% {
+    transform: translateX(5%) rotate(-20deg);
+  }
+  80% {
+    transform: translateX(5%) rotate(20deg);
+  }
+  90% {
+    transform: translateX(5%) rotate(-20deg);
+  }
+
+  100% {
+    transform: translateX(5%) rotate(0deg);
+  }
+}
+
+.telegram_button:hover,
+.Presale_button:hover {
+  filter: brightness(150%);
+}
+.telegram_button i {
+  font-size: 25px;
+  margin-right: 10px;
+}
+.telegram_button p {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.header_wrapper {
+  position: sticky;
+  top: 0px;
+  z-index: 999;
+}
+
+.header_wrapper.active {
+  background-color: #000;
+}
+.header_wrapper.active header {
+  height: 100px;
+}
 header {
   width: 90%;
   margin: auto;
   justify-content: space-between;
   height: 140px;
+  transition: 0.5s ease all;
 }
 header,
 header nav {
@@ -32,7 +169,7 @@ header nav {
   align-items: center;
 }
 header > a img {
-  width: 150px;
+  width: 220px;
 }
 header nav a {
   color: #fff;
@@ -42,6 +179,9 @@ header nav a {
 }
 header nav > * + * {
   margin-left: 2rem;
+}
+header nav > *:last-child {
+  margin-left: 1rem;
 }
 header nav .button {
   background: linear-gradient(to right, #07274f, #0279f6);
