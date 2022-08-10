@@ -1,9 +1,57 @@
+body {
+  overflow-x: hidden;
+}
 .bg_1 {
+  background: linear-gradient(to right, #07274f, #0279f6);
   position: absolute;
   right: 0px;
   width: 100%;
+  top: 660px;
   z-index: -1;
-  top: 0px;
+  width: 100%;
+  height: 1450px;
+}
+.bg_4 {
+  background: linear-gradient(to right, #07274f, #0279f6);
+  position: absolute;
+  right: 0px;
+  width: 100%;
+  top: 5160px;
+
+  z-index: -1;
+  width: 100%;
+  height: 1550px;
+}
+.bg_2 {
+  border-radius: 50%;
+  position: absolute;
+  z-index: -1;
+  background: linear-gradient(to right, #07274f, #0279f6);
+  filter: brightness(50%);
+  top: 2360px;
+  left: -30%;
+  -webkit-filter: blur(125px) brightness(40%);
+  width: 60vw;
+  height: 60vw;
+}
+.bg_3 {
+  border-radius: 50%;
+  position: absolute;
+  z-index: -1;
+  background: linear-gradient(to right, #07274f, #0279f6);
+  filter: brightness(50%);
+  top: 3460px;
+  right: -30%;
+  -webkit-filter: blur(125px) brightness(40%);
+  width: 60vw;
+  height: 60vw;
+}
+.bg_1 img:last-child,
+.bg_4 img:last-child {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
 }
 main {
   color: #fff;
@@ -72,6 +120,7 @@ main .buttons_wrapper button {
   color: #fff;
   border: 4px solid #0088ff;
   background-color: #0088ff2c;
+  background-color: #000;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -194,6 +243,7 @@ main .buttons_wrapper button {
 /* higest_grid */
 .higest_grid {
   padding: 6rem 0rem;
+
   padding-top: 0px;
   display: grid;
   grid-template-columns: 1fr;
@@ -316,18 +366,12 @@ main .buttons_wrapper button {
   color: #0088ff;
   font-weight: 500;
 }
-.protcol_cards_wrapper .card svg {
+.protcol_cards_wrapper .card img {
   width: 150px;
-  height: 100px;
+
   margin-bottom: 1rem;
 }
-.protcol_cards_wrapper .card:nth-child(1) svg,
-.protcol_cards_wrapper .card:nth-child(6) svg {
-  height: 90px;
-}
-.protcol_cards_wrapper .card svg path {
-  fill: #0088ff;
-}
+
 .protcol_cards_wrapper .card p {
   margin: 2rem 0rem;
   line-height: 40px;
@@ -376,9 +420,11 @@ main .buttons_wrapper button {
   margin-top: 2rem;
 }
 .eco_system .grid_wrapper {
-  background-image: url("../img/3.png");
+  background-image: url("../img/3-removebg-preview\ \(2\).png"),
+    url("../img/Waypaylogos/4_no_bg_croped.png");
   /* height: 950px; */
-  background-position: center 20%;
+  background-position: center 20%, center 32%;
+  background-size: 550px, 150px;
   background-repeat: no-repeat;
   margin-top: 6rem;
   display: grid;
@@ -478,6 +524,7 @@ main .buttons_wrapper button {
   width: 100%;
   height: 500px;
   border: 1px solid #15508e;
+  background-color: #000;
   border-radius: 10px;
   position: relative;
 }
