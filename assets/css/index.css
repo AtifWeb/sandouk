@@ -13,9 +13,9 @@ body {
   position: absolute;
   right: 0px;
   width: 100%;
-  top: 760px;
+  top: 960px;
   z-index: -1;
-  height: 1250px;
+  height: 950px;
 }
 .bg_4 {
   background: linear-gradient(to right, #07274f, #0279f6);
@@ -64,9 +64,53 @@ body {
 main {
   color: #fff;
   padding: 6rem 0rem;
+  padding-bottom: 20rem !important;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
+  position: relative;
+}
+main .bottom_abs_area {
+  position: absolute;
+  bottom: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .bottom_abs_area .left_side > *:nth-child(2) img {
+  background-color: #fff;
+  border-radius: 99px;
+  height: 30px;
+  object-fit: cover;
+  padding-top: 6px;
+}
+main .bottom_abs_area > .left_side {
+  display: flex;
+  align-items: center;
+}
+main .bottom_abs_area > .left_side > * + * {
+  margin-left: 5rem;
+}
+main .bottom_abs_area .box {
+  display: flex;
+  align-items: center;
+}
+main .bottom_abs_area .box h1 {
+  font-size: 18px;
+  margin-right: 15px;
+  letter-spacing: unset;
+}
+main .bottom_abs_area .left_side > *:nth-child(1) h1 {
+  margin-right: 5px;
+}
+main .bottom_abs_area .box img {
+  width: 150px;
+}
+main .bottom_abs_area > .box img {
+  border-radius: 0px;
+  height: 30px;
+  object-fit: cover;
 }
 main .presentation .d_flex {
   display: flex;
@@ -83,7 +127,7 @@ main .button_wrapper {
   display: flex;
   justify-content: center;
 }
-main .button_wrapper button {
+main .button_wrapper a {
   background: linear-gradient(to right, #07274f, #0279f6);
   padding: 1.2rem 2rem;
   border-radius: 99px;
@@ -164,7 +208,7 @@ main h1 span.stagger1 {
 }
 main span.space {
   margin: 0rem 5px;
-  background-color: red;
+
   /* width: 10px; */
 }
 main > img {
@@ -329,8 +373,8 @@ main .buttons_wrapper button {
 /* higest_grid */
 .higest_grid {
   padding: 6rem 0rem;
+  padding-top: 10rem !important;
 
-  padding-top: 0px;
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 2rem;

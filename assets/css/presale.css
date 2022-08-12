@@ -1,0 +1,54 @@
+main {
+  display: block;
+  height: unset !important;
+  padding-bottom: 0px !important;
+}
+main > h1 {
+  text-align: center;
+  display: block;
+  letter-spacing: unset;
+}
+
+.protcol_cards_wrapper {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.protocol {
+  padding-bottom: 0px;
+}
+
+.protocol button {
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-top: 3rem;
+}
+.protcol_cards_wrapper .card {
+  justify-content: flex-start;
+}
+.protcol_cards_wrapper .card img {
+  margin-bottom: 0px;
+}
+.protcol_cards_wrapper .card h1 {
+  height: 60px;
+}
+.protcol_cards_wrapper .card .img_wrapper {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.protcol_cards_wrapper .card:nth-child(2) img {
+  width: 90px;
+}
+.protcol_cards_wrapper .card:nth-child(3) img {
+  width: 180px;
+}
+.protcol_cards_wrapper .card p {
+  margin-bottom: 0px;
+}
+
+.protcol_cards_wrapper .card {
+  padding: 3rem 2rem !important;
+}
