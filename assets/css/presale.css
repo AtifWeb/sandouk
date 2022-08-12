@@ -1,4 +1,4 @@
-main {
+/* main {
   display: block;
   height: unset !important;
   padding-bottom: 0px !important;
@@ -7,54 +7,55 @@ main > h1 {
   text-align: center;
   display: block;
   letter-spacing: unset;
-}
+} */
 
-.protcol_cards_wrapper {
-  padding-top: 0px;
+.new .protcol_cards_wrapper {
+  padding-top: 8rem;
   padding-bottom: 0px;
 }
-.protocol {
+.new.protocol {
   padding-bottom: 0px;
+  margin-top: 7rem;
 }
 
-.protocol button {
+.new.protocol button {
   background: transparent;
   border: none;
   outline: none;
   cursor: pointer;
   margin-top: 3rem;
 }
-.protcol_cards_wrapper .card {
+.new .protcol_cards_wrapper .card {
   justify-content: flex-start;
 }
-.protcol_cards_wrapper .card img {
+.new .protcol_cards_wrapper .card img {
   margin-bottom: 0px;
 }
-.protcol_cards_wrapper .card h1 {
+.new .protcol_cards_wrapper .card h1 {
   height: 60px;
 }
-.protcol_cards_wrapper .card .img_wrapper {
+.new .protcol_cards_wrapper .card .img_wrapper {
   height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.protcol_cards_wrapper .card:nth-child(2) img {
+.new .protcol_cards_wrapper .card:nth-child(2) img {
   width: 90px;
 }
-.protcol_cards_wrapper .card:nth-child(3) img {
+.new .protcol_cards_wrapper .card:nth-child(3) img {
   width: 180px;
 }
-.protcol_cards_wrapper .card p {
+.new .protcol_cards_wrapper .card p {
   margin-bottom: 0px;
 }
 
-.protcol_cards_wrapper .card {
+.new .protcol_cards_wrapper .card {
   padding: 3rem 2rem !important;
   padding-top: 6rem !important;
   position: relative;
 }
-.protcol_cards_wrapper .card .number {
+.new .protcol_cards_wrapper .card .number {
   color: #077bf9;
   width: 80px;
   height: 80px;
