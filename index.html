@@ -35,7 +35,7 @@
     <a href="./Presale.html" class="Presale_button">
       <p>Presale</p>
     </a>
-    <!-- <img src="./assets/img/main_bg.jpg" class="bg_0" alt="" /> -->
+
     <div class="bg_1">
       <img src="./assets/img/wave (3).svg" alt="" />
 
@@ -71,6 +71,10 @@
             <a href="#" class="button"> DAPP </a>
           </li>
         </nav>
+
+        <div class="burger_icon">
+          <i class="fa-solid fa-bars"></i>
+        </div>
       </header>
     </div>
 
@@ -1388,7 +1392,17 @@
         interval: 2000,
         speed: 1000,
         perMove: 1,
+        breakpoints: {
+          800: {
+            perPage: 3,
+          },
+          600: {
+            perPage: 2,
+          },
+        },
       }).mount();
     </script>
+
+    <script src="./assets/js/common.js"></script>
   </body>
 </html>

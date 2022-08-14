@@ -1,6 +1,14 @@
 body {
   overflow-x: hidden;
 }
+.burger_icon {
+  display: none;
+  color: #fff;
+  padding-bottom: 10px;
+}
+.burger_icon i {
+  font-size: 30px;
+}
 .bg_0 {
   position: absolute;
   right: 0px;
@@ -208,8 +216,6 @@ main h1 span.stagger1 {
 }
 main span.space {
   margin: 0rem 5px;
-
-  /* width: 10px; */
 }
 main > img {
   width: 70%;
@@ -576,7 +582,6 @@ main .buttons_wrapper button {
 .eco_system .grid_wrapper > *:nth-child(5) {
   grid-column: span 2;
   text-align: center;
-  margin-top: 5rem;
 }
 .eco_system .grid_wrapper > *:nth-child(5) img {
   text-align: center;
@@ -798,4 +803,220 @@ footer .footer_bottom_content ul i {
 .how_it_work {
   margin-top: 10rem;
   margin-bottom: 5rem;
+}
+
+@media screen and (max-width: 1350px) {
+  .common_width {
+    width: 90%;
+  }
+  .bg_3 {
+    right: 0px;
+  }
+  main {
+    grid-template-columns: 1fr;
+  }
+  main > *:nth-child(1) {
+    order: 2;
+  }
+  main > *:nth-child(2) {
+    order: 1;
+  }
+
+  .bg_1 {
+    top: 1900px;
+  }
+  main .presentation .d_flex {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 1050px) {
+  header {
+    height: 100px;
+  }
+  header nav {
+    position: fixed;
+    left: -100%;
+    top: 0px;
+    flex-direction: column;
+    background-color: #000;
+    width: 250px;
+    z-index: 99999;
+    padding: 3rem 0rem;
+    height: 100vh;
+    transition: 0.3s ease all;
+  }
+  .burger_icon {
+    display: block;
+  }
+  header nav.active {
+    left: 0px;
+  }
+  header nav > * + * {
+    margin-left: 0px;
+    margin-top: 1rem;
+  }
+  header nav > *:last-child {
+    margin-left: 0px;
+  }
+  main .bottom_abs_area > .left_side > * + * {
+    margin-left: 1rem;
+  }
+  .direction_cards_wrapper,
+  .protcol_cards_wrapper {
+    grid-template-columns: 1fr;
+  }
+  .faq_wrapper > * {
+    grid-column: span 2;
+  }
+  footer .footer_top_content {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 950px) {
+  main .bottom_abs_area {
+    flex-direction: column;
+  }
+  main {
+    padding-bottom: 12rem !important;
+  }
+}
+@media screen and (max-width: 800px) {
+  .eco_system .grid_wrapper {
+    justify-items: center;
+    grid-row-gap: 20px;
+  }
+  .eco_system .grid_wrapper > * {
+    grid-column: span 2;
+  }
+  .eco_system .grid_wrapper {
+    background-position: center 40%;
+    background-size: 300px, 150px;
+  }
+  .higest_grid .right_area p,
+  .eco_system > p {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 718px) {
+  main .presentation .d_flex {
+    flex-direction: column;
+  }
+  main .presentation img {
+    display: block;
+  }
+  main .bottom_abs_area > .left_side {
+    flex-direction: column;
+  }
+  main .bottom_abs_area .box h1 {
+    width: 150px;
+    margin-right: 0px !important;
+  }
+  main .bottom_abs_area > .left_side > * + * {
+    margin-left: 0px;
+  }
+  main .bottom_abs_area > .left_side + div {
+    margin-top: 1.5rem;
+  }
+  main .bottom_abs_area {
+    bottom: 0px;
+  }
+}
+@media screen and (max-width: 650px) {
+  main {
+    padding-top: 2rem;
+  }
+  main span {
+    font-size: 20px;
+  }
+  main .presentation .d_flex h1 span {
+    font-size: 45px !important;
+  }
+  main .presentation img {
+    width: 120px;
+  }
+  main .presentation > p {
+    line-height: 30px;
+  }
+  header nav {
+    width: 200px;
+  }
+  header nav a {
+    font-size: 16px;
+  }
+  .new .protcol_cards_wrapper > * + * {
+    margin-top: 2rem;
+  }
+  .higest_grid .right_area h1,
+  .protocol > h1,
+  .eco_system > h1,
+  .faq_wrapper > h1 {
+    font-size: 25px;
+  }
+  .faq_wrapper > h1 {
+    font-size: 30px;
+  }
+  .higest_grid .right_area p,
+  .eco_system > p,
+  .eco_system .grid_wrapper p,
+  .new .protcol_cards_wrapper .card p {
+    font-size: 14px;
+  }
+  .faq_wrapper > div .head h1 {
+    font-size: 17px;
+  }
+  .new .protcol_cards_wrapper .card .img_wrapper {
+    height: 100px !important;
+  }
+  .new .protcol_cards_wrapper .card:nth-child(1) img {
+    width: 100px !important;
+  }
+  .new .protcol_cards_wrapper .card:nth-child(3) img {
+    width: 150px !important;
+  }
+  .new .protcol_cards_wrapper .card:nth-child(2) img {
+    width: 80px !important;
+  }
+  .eco_system {
+    padding-top: 10rem;
+  }
+  header > a img {
+    width: 140px;
+  }
+  main .button_wrapper a,
+  .telegram_button,
+  .Presale_button,
+  header nav .button {
+    height: 40px;
+    font-size: 14px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .faq_wrapper > h1 {
+    margin-bottom: 3rem;
+  }
+
+  footer .footer_top_content ul > * + * {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  main span.space {
+    margin: 0rem 2px;
+  }
+  footer .footer_top_content {
+    grid-template-columns: 1fr;
+  }
+  footer .footer_bottom_content ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    flex-direction: column;
+  }
+  footer .footer_bottom_content ul > * + * {
+    margin-left: 0rem;
+  }
+  main .presentation > p {
+    line-height: 25px;
+  }
 }
