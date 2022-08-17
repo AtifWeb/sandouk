@@ -133,7 +133,13 @@ main .presentation img.stagger2 {
 }
 main .button_wrapper {
   display: flex;
+  align-items: center;
+
   justify-content: center;
+  margin-top: 2rem;
+}
+main .button_wrapper img {
+  width: 120px;
 }
 main .button_wrapper a {
   background: linear-gradient(to right, #07274f, #0279f6);
@@ -148,7 +154,7 @@ main .button_wrapper a {
 
   cursor: pointer;
   transition: 0.3s ease all;
-  margin-top: 2rem;
+
   animation: 2s RotateButtonMain linear;
 }
 
@@ -569,6 +575,18 @@ main .buttons_wrapper button {
   grid-row-gap: 6rem;
 }
 
+.eco_system .grid_wrapper > div img,
+.eco_system .grid_wrapper > div p {
+  transform: scale(0.4);
+  opacity: 0;
+  transition: 1s ease all;
+}
+
+.eco_system .grid_wrapper.active > div img,
+.eco_system .grid_wrapper.active > div p {
+  transform: scale(1);
+  opacity: 1;
+}
 .eco_system .grid_wrapper img {
   width: 200px;
   margin-left: 5rem;
@@ -582,6 +600,7 @@ main .buttons_wrapper button {
 .eco_system .grid_wrapper > *:nth-child(5) {
   grid-column: span 2;
   text-align: center;
+  padding-top: 3rem;
 }
 .eco_system .grid_wrapper > *:nth-child(5) img {
   text-align: center;
@@ -805,6 +824,16 @@ footer .footer_bottom_content ul i {
   margin-bottom: 5rem;
 }
 
+/* road_wrapper */
+.road_wrapper > h1 {
+  margin-bottom: 0px;
+}
+.road_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 @media screen and (max-width: 1350px) {
   .common_width {
     width: 90%;
@@ -955,6 +984,7 @@ footer .footer_bottom_content ul i {
   .faq_wrapper > h1 {
     font-size: 30px;
   }
+
   .higest_grid .right_area p,
   .eco_system > p,
   .eco_system .grid_wrapper p,
@@ -1019,4 +1049,13 @@ footer .footer_bottom_content ul i {
   main .presentation > p {
     line-height: 25px;
   }
+}
+.protocol .protcol_cards_wrapper .card {
+  transform: scale(0.2);
+  opacity: 0px;
+  transition: 1s ease all;
+}
+.protocol .protcol_cards_wrapper.active .card {
+  transform: scale(1);
+  opacity: 1;
 }
