@@ -134,9 +134,18 @@ main .presentation img.stagger2 {
 main .button_wrapper {
   display: flex;
   align-items: center;
-
+  flex-direction: row-reverse;
   justify-content: center;
   margin-top: 2rem;
+}
+main .button_wrapper .box {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+}
+main .button_wrapper .box h1 {
+  font-size: 20px;
+  letter-spacing: unset;
 }
 main .button_wrapper img {
   width: 120px;
@@ -777,6 +786,9 @@ footer .footer_top_content {
   padding-bottom: 5rem;
   padding-top: 5rem;
 }
+footer .footer_top_content ul {
+  display: none;
+}
 footer ul .head {
   color: #0088ff;
   font-size: 25px;
@@ -804,8 +816,15 @@ footer .footer_bottom_content ul {
   align-items: center;
   justify-content: flex-start;
 }
+footer .footer_bottom_content ul img {
+  width: 70px;
+}
+footer .footer_bottom_content ul li:last-child img {
+  width: 67px;
+  transform: translateY(2px);
+}
 footer .footer_bottom_content ul > * + * {
-  margin-left: 2rem;
+  margin-left: 0rem;
 }
 footer .footer_bottom_content ul svg {
   height: 40px;
@@ -972,6 +991,10 @@ footer .footer_bottom_content ul i {
   header nav a {
     font-size: 16px;
   }
+  main .button_wrapper {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
   .new .protcol_cards_wrapper > * + * {
     margin-top: 2rem;
   }
@@ -1048,6 +1071,22 @@ footer .footer_bottom_content ul i {
   }
   main .presentation > p {
     line-height: 25px;
+  }
+}
+@media screen and (max-width: 450px) {
+  main .button_wrapper .box h1 {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 370px) {
+  main .button_wrapper .box {
+    /* flex-direction: column; */
+    margin-right: 0px;
+    /* text-align: center; */
+  }
+  main .presentation img {
+    margin-left: 0px;
+    width: 90px;
   }
 }
 .protocol .protcol_cards_wrapper .card {

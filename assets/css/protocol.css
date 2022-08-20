@@ -1,0 +1,138 @@
+.header_wrapper {
+  background-color: #000;
+}
+.main {
+  background: linear-gradient(to right, #07274f, #0279f6);
+
+  padding-bottom: 30rem;
+  padding-top: 10rem;
+  position: relative;
+}
+.main svg {
+  position: absolute;
+  left: 0px;
+  bottom: 0;
+  width: 100%;
+}
+.main > div {
+  display: grid;
+  grid-template-columns: 1fr 0.8fr;
+  grid-gap: 2rem;
+}
+.main > div img {
+  display: block;
+  width: 150px;
+  margin-bottom: 1rem;
+}
+.main > div:first-child span {
+  display: inline-block;
+}
+.main > div h1 {
+  font-size: 50px;
+  width: 80%;
+  color: #fff;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+.main > div h2 {
+  font-size: 35px;
+
+  color: #fff;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+.main > div span {
+  background: linear-gradient(to left, #07274f, #0279f6);
+  padding: 5px;
+  color: #fff;
+  font-size: 14px;
+}
+.main > div p {
+  font-size: 22px;
+  color: #fff;
+  margin-bottom: 2rem;
+  line-height: 40px;
+}
+
+.main .form_wrapper {
+  padding: 2rem;
+  background-color: #105095;
+  border-radius: 20px;
+}
+
+.main .form_wrapper > img {
+  width: 190px;
+}
+.main .form_wrapper p {
+  font-size: 22px;
+}
+.main .form_wrapper .code {
+  background-color: #000;
+  width: 100%;
+  font-size: 18px;
+  text-align: center;
+  border-radius: 5px;
+}
+.main .form_wrapper button {
+  background: linear-gradient(to right, #07274f, #0279f6);
+  padding: 0.8rem 2rem;
+  border-radius: 99px;
+  height: 60px;
+  animation: 2s RotateButtonHeader linear;
+  display: inline-block;
+  transition: 0.3s ease all;
+  border: none;
+  color: #fff;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.main ul {
+  padding-left: 3rem;
+  list-style: disc;
+}
+.main ul li {
+  font-size: 22px;
+  color: #fff;
+  margin-bottom: 0.5rem;
+  line-height: 40px;
+}
+@media screen and (max-width: 1200px) {
+  .main > div {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 650px) {
+  .main > div h2 {
+    font-size: 25px;
+  }
+  .main > div h1 {
+    font-size: 35px;
+  }
+  .main .form_wrapper .code {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .main {
+    padding-top: 4rem;
+  }
+  .main .form_wrapper .code {
+    word-break: break-all;
+  }
+  .main > div p,
+  .main ul li {
+    font-size: 15px;
+    line-height: 30px;
+  }
+  .main .form_wrapper p {
+    font-size: 17px;
+  }
+  .main .form_wrapper button {
+    height: 40px;
+    font-size: 14px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
