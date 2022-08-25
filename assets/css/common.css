@@ -160,9 +160,25 @@ header {
   width: 90%;
   margin: auto;
   justify-content: space-between;
-  height: 140px;
+
   transition: 0.5s ease all;
 }
+header nav > li {
+  height: 140px;
+  display: flex;
+  align-items: center;
+}
+header .top_area {
+  display: flex;
+  align-items: center;
+  position: relative;
+  color: #fff;
+  cursor: pointer;
+}
+header .top_area > * + * {
+  margin-left: 1rem;
+}
+
 header,
 header nav {
   display: flex;
@@ -171,7 +187,30 @@ header nav {
 header > a img {
   width: 220px;
 }
-header nav a {
+header li ul {
+  position: absolute;
+  top: 80%;
+  background-color: #000;
+  border-radius: 10px;
+  padding: 1rem;
+  z-index: 9999;
+  display: none;
+}
+header li:hover ul {
+  display: block;
+}
+header li:hover .top_area i {
+  transform: rotate(180deg);
+}
+header li ul > * + * {
+  margin-top: 1rem;
+}
+header li ul a {
+  font-weight: 500;
+  font-size: 19px;
+}
+header nav a,
+header .top_area p {
   color: #fff;
   font-size: 22px;
   font-weight: 700;

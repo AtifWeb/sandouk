@@ -722,13 +722,51 @@ main .buttons_wrapper button {
 .logos_wrapper {
   width: 100%;
   padding: 4rem 2rem;
-  background-color: rgb(18, 18, 18);
+  background-color: #fff;
+  position: relative;
+  padding-top: 4.5rem;
+  padding-bottom: 0rem;
   margin-bottom: 5rem;
 }
-
+.logos_wrapper li a {
+  display: block;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logos_wrapper li a .first_img {
+  width: 70%;
+}
+.logos_wrapper li a .second_img {
+  width: 80%;
+}
+.logos_wrapper li a .third_img {
+  width: 70%;
+}
+.logos_wrapper li a .fourth_img {
+  width: 60%;
+}
+.logos_wrapper .first_svg {
+  height: 60px;
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  top: 0px;
+  transform: rotateY(180deg);
+}
+.logos_wrapper .second_svg {
+  height: 60px;
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  bottom: -60px;
+  transform: rotateY(180deg);
+}
 .logos_wrapper .splide__pagination {
   bottom: -2rem;
 }
+
 /* faq_wrapper */
 .faq_wrapper {
   padding: 6rem 0rem;
@@ -774,7 +812,7 @@ main .buttons_wrapper button {
 }
 
 footer {
-  margin-top: 10rem;
+  margin-top: 0rem;
 }
 footer > .footer_top_content_wrapper {
   background-color: rgb(18, 18, 18);
@@ -785,6 +823,7 @@ footer .footer_top_content {
   grid-gap: 2rem;
   padding-bottom: 5rem;
   padding-top: 5rem;
+  display: none;
 }
 footer .footer_top_content ul {
   display: none;

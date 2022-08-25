@@ -1,10 +1,32 @@
 .header_wrapper {
   background-color: #000;
 }
-.main {
+.bg_main {
   background: linear-gradient(to right, #07274f, #0279f6);
-
-  padding-bottom: 30rem;
+  height: 1300px;
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  top: 400px;
+  z-index: -1;
+}
+.bg_main svg:first-child {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+}
+.bg_main svg:last-child {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+}
+.main > div {
+  width: 1200px;
+}
+.main {
+  padding-bottom: 25rem;
   padding-top: 10rem;
   position: relative;
 }
@@ -16,23 +38,25 @@
 }
 .main > div {
   display: grid;
-  grid-template-columns: 1fr 0.8fr;
-  grid-gap: 2rem;
+  grid-template-columns: 1fr 0.7fr;
+  grid-gap: 4rem;
 }
 .main > div img {
   display: block;
-  width: 150px;
+  width: 90px;
   margin-bottom: 1rem;
 }
 .main > div:first-child span {
   display: inline-block;
+  font-size: 13px;
+  padding: 0.2rem 0.5rem;
 }
 .main > div h1 {
-  font-size: 50px;
+  font-size: 45px;
   width: 80%;
   color: #fff;
   margin-top: 10px;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 .main > div h2 {
   font-size: 35px;
@@ -48,7 +72,8 @@
   font-size: 14px;
 }
 .main > div p {
-  font-size: 22px;
+  font-size: 20px;
+  font-weight: 400;
   color: #fff;
   margin-bottom: 2rem;
   line-height: 40px;
@@ -56,37 +81,50 @@
 
 .main .form_wrapper {
   padding: 2rem;
-  background-color: #105095;
+  background-color: #000;
+  /* min-height: 500px; */
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: flex-start; */
+  /* align-items: center; */
+  margin-top: 8rem;
   border-radius: 20px;
+  border: 1px solid #0088ff;
+  box-shadow: 0px 0px 40px #0366ce;
 }
 
 .main .form_wrapper > img {
-  width: 190px;
+  width: 120px;
 }
 .main .form_wrapper p {
-  font-size: 22px;
+  font-size: 20px;
 }
 .main .form_wrapper .code {
   background-color: #000;
   width: 100%;
-  font-size: 18px;
+  font-size: 15px;
   text-align: center;
   border-radius: 5px;
+  border: 1px solid #0088ff;
+  color: #fff;
 }
 .main .form_wrapper button {
   background: linear-gradient(to right, #07274f, #0279f6);
-  padding: 0.8rem 2rem;
+  padding: 0.8rem 1.5rem;
   border-radius: 99px;
-  height: 60px;
+  height: 50px;
   animation: 2s RotateButtonHeader linear;
   display: inline-block;
   transition: 0.3s ease all;
   border: none;
   color: #fff;
   color: #fff;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 700;
   text-transform: uppercase;
+}
+.main .form_wrapper button:hover {
+  filter: brightness(150%);
 }
 .main ul {
   padding-left: 3rem;
@@ -101,6 +139,9 @@
 @media screen and (max-width: 1200px) {
   .main > div {
     grid-template-columns: 1fr;
+  }
+  .main > div {
+    width: 90%;
   }
 }
 @media screen and (max-width: 650px) {
