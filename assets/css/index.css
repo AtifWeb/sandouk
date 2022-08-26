@@ -21,8 +21,9 @@ body {
   position: absolute;
   right: 0px;
   width: 100%;
-  top: 960px;
+  top: 760px;
   z-index: -1;
+
   height: 950px;
 }
 .bg_4 {
@@ -72,7 +73,7 @@ body {
 main {
   color: #fff;
   padding: 6rem 0rem;
-  padding-bottom: 20rem !important;
+  padding-bottom: 6rem !important;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
@@ -135,8 +136,9 @@ main .button_wrapper {
   display: flex;
   align-items: center;
   flex-direction: row-reverse;
-  justify-content: center;
+  justify-content: space-between;
   margin-top: 2rem;
+  padding: 0rem 2rem;
 }
 main .button_wrapper .box {
   display: flex;
@@ -742,16 +744,16 @@ main .buttons_wrapper button {
   justify-content: center;
 }
 .logos_wrapper li a .first_img {
-  width: 70%;
+  width: 60%;
 }
 .logos_wrapper li a .second_img {
-  width: 80%;
+  width: 100%;
 }
 .logos_wrapper li a .third_img {
-  width: 70%;
+  width: 80%;
 }
 .logos_wrapper li a .fourth_img {
-  width: 60%;
+  width: 70%;
 }
 .logos_wrapper .first_svg {
   height: 60px;
@@ -792,6 +794,15 @@ main .buttons_wrapper button {
 
   color: #fff;
 }
+.faq_grid {
+  grid-column: span 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+}
+.faq_grid > div > * + * {
+  margin-top: 1rem;
+}
 .faq_wrapper > div .head {
   box-shadow: 0px 0px 40px #0366ce;
   border: 1px solid #15508e;
@@ -810,10 +821,10 @@ main .buttons_wrapper button {
   display: none;
   padding: 2.5rem 1.5rem;
 }
-.faq_wrapper > .faq.active p {
+.faq_wrapper .faq.active p {
   display: block;
 }
-.faq_wrapper > .faq.active .head i {
+.faq_wrapper .faq.active .head i {
   transform: rotate(180deg);
 }
 
@@ -863,10 +874,17 @@ footer .footer_bottom_content ul {
 }
 footer .footer_bottom_content ul img {
   width: 70px;
+  transition: 0.3s ease all;
+}
+footer .footer_bottom_content ul img:hover {
+  transform: scale(1.2);
 }
 footer .footer_bottom_content ul li:last-child img {
   width: 67px;
   transform: translateY(2px);
+}
+footer .footer_bottom_content ul li:last-child img:hover {
+  transform: translateY(2px) scale(1.2);
 }
 footer .footer_bottom_content ul > * + * {
   margin-left: 0rem;
@@ -966,6 +984,9 @@ footer .footer_bottom_content ul i {
   }
 }
 @media screen and (max-width: 950px) {
+  .faq_grid {
+    grid-template-columns: 1fr;
+  }
   main .bottom_abs_area {
     flex-direction: column;
   }
