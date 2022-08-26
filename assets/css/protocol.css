@@ -82,17 +82,16 @@
 .main .form_wrapper {
   padding: 2rem;
   background-color: #000;
-  /* min-height: 500px; */
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* justify-content: flex-start; */
-  /* align-items: center; */
+
   margin-top: 8rem;
   border-radius: 20px;
   border: 1px solid #0088ff;
   box-shadow: 0px 0px 40px #0366ce;
 }
-
+.main .form_wrapper + img {
+  width: 100%;
+  margin-top: 2rem;
+}
 .main .form_wrapper > img {
   width: 120px;
 }

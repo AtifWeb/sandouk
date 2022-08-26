@@ -289,6 +289,9 @@ main .buttons_wrapper button {
 .protcol_cards_wrapper .card p {
   font-size: 20px;
 }
+.protcol_cards_wrapper .card p {
+  min-height: 350px;
+}
 .direction_cards_wrapper .card svg {
   width: 35px;
   margin-top: 3rem;
@@ -503,13 +506,16 @@ main .buttons_wrapper button {
 .protocol > p {
   color: #fff;
   font-size: 22px;
-  width: 750px;
+
   text-align: center;
   margin-top: 2rem;
   line-height: 35px;
 }
+.protocolagain > p {
+  width: 750px;
+}
 .protcol_cards_wrapper .card {
-  border: 1px solid #134d8a;
+  border: 3px solid #134d8a;
   background-color: #000;
 }
 .protcol_cards_wrapper .card h1 {
@@ -966,6 +972,10 @@ footer .footer_bottom_content ul i {
   main {
     padding-bottom: 12rem !important;
   }
+  main .button_wrapper {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
 }
 @media screen and (max-width: 800px) {
   .eco_system .grid_wrapper {
@@ -1030,10 +1040,7 @@ footer .footer_bottom_content ul i {
   header nav a {
     font-size: 16px;
   }
-  main .button_wrapper {
-    flex-direction: row-reverse;
-    justify-content: space-between;
-  }
+
   .new .protcol_cards_wrapper > * + * {
     margin-top: 2rem;
   }

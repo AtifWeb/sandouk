@@ -3,6 +3,7 @@ let myTimeline = new TimelineLite();
 let myTimeline2 = new TimelineLite();
 let myTimeline3 = new TimelineLite();
 let myTimeline4 = new TimelineLite();
+let activeFaq = null;
 var controller = new ScrollMagic.Controller();
 myTimeline.staggerTo(".stagger1", 0.5, { opacity: 1, y: 0 }, 0.06);
 myTimeline.staggerTo(".stagger", 0.2, { opacity: 1, y: 0 }, 0.03);
@@ -12,7 +13,16 @@ FaqHead.forEach((EachHead) => {
   EachHead.addEventListener("click", (e) => {
     let Parent = e.target.closest(".faq");
 
-    Parent.classList.toggle("active");
+    if (activeFaq != Parent && activeFaq != null) {
+      activeFaq.classList.remove("active");
+    }
+    if (Parent.classList.contains("active")) {
+      Parent.classList.remove("active");
+    } else {
+      Parent.classList.add("active");
+    }
+
+    activeFaq = Parent;
   });
 });
 
