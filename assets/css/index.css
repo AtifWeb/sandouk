@@ -243,10 +243,10 @@ main span.space {
 }
 main .last_child_div {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
 }
 main .main_sheild {
-  width: 70%;
+  width: 80%;
 }
 main > img.stagger3 {
   opacity: 0;
