@@ -82,10 +82,10 @@ main {
   position: relative;
 }
 main > div {
-  background-color: red;
+  /* background-color: red; */
 }
 main > div:last-child {
-  background-color: #0088ff;
+  /* background-color: #0088ff; */
 }
 main .bottom_abs_area {
   position: absolute;
