@@ -246,7 +246,7 @@ main .last_child_div {
   justify-content: flex-end;
 }
 main .main_sheild {
-  width: 80%;
+  width: 70%;
 }
 main > img.stagger3 {
   opacity: 0;
