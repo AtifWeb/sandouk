@@ -247,6 +247,7 @@ main .last_child_div {
 }
 main .main_sheild {
   width: 70%;
+  transform: translateX(120px);
 }
 main > img.stagger3 {
   opacity: 0;
