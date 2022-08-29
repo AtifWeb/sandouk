@@ -77,16 +77,10 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  /* width: 90%; */
-  /* margin: 0rem auto; */
+
   position: relative;
 }
-main > div {
-  /* background-color: red; */
-}
-main > div:last-child {
-  /* background-color: #0088ff; */
-}
+
 main .bottom_abs_area {
   position: absolute;
   bottom: 100px;
@@ -276,7 +270,9 @@ main .buttons_wrapper button {
   width: 220px;
   cursor: pointer;
 }
-
+main .last_child_div {
+  /* background-color: red; */
+}
 .direction_cards_wrapper,
 .protcol_cards_wrapper {
   display: grid;
