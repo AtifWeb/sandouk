@@ -81,6 +81,12 @@ main {
   /* margin: 0rem auto; */
   position: relative;
 }
+main > div {
+  background-color: red;
+}
+main > div:last-child {
+  background-color: #0088ff;
+}
 main .bottom_abs_area {
   position: absolute;
   bottom: 100px;
