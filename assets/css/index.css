@@ -933,6 +933,12 @@ footer .footer_bottom_content ul i {
   .common_width {
     width: 90%;
   }
+  main .main_sheild {
+    transform: translateX(0px);
+  }
+  main > *:nth-child(2) {
+    justify-content: center;
+  }
   .bg_3 {
     right: 0px;
   }
@@ -969,6 +975,19 @@ footer .footer_bottom_content ul i {
     height: 100vh;
     transition: 0.3s ease all;
   }
+  header nav > li {
+    position: relative;
+  }
+  header li ul {
+    padding: 0px;
+    top: 60px;
+  }
+  header li ul a {
+    font-size: 14px;
+  }
+  header nav > li {
+    height: unset;
+  }
   .burger_icon {
     display: block;
   }
@@ -977,7 +996,7 @@ footer .footer_bottom_content ul i {
   }
   header nav > * + * {
     margin-left: 0px;
-    margin-top: 1rem;
+    margin-top: 2rem;
   }
   header nav > *:last-child {
     margin-left: 0px;
