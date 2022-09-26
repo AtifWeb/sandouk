@@ -15,12 +15,18 @@
 .top_area_partnership h1 {
   color: #fff;
   text-align: center;
-  font-size: 50px;
+  font-size: 60px;
 }
 .top_area_partnership h2 {
   color: #fff;
   font-weight: 500;
+  margin-top: 1rem;
   font-size: 20px;
+}
+.top_area_partnership p {
+  color: #fff;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
 }
 @media screen and (max-width: 1200px) {
   .main_2 > div > *:first-child {
@@ -44,5 +50,11 @@
   }
   .main_2 {
     padding-top: 3rem !important;
+  }
+  .top_area_partnership img {
+    width: 100%;
+  }
+  .main .left_side img {
+    width: 100% !important;
   }
 }
