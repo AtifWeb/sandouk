@@ -6,6 +6,9 @@ body {
   color: #fff;
   padding-bottom: 10px;
 }
+.burger_icon > * {
+  pointer-events: none;
+}
 .burger_icon i {
   font-size: 30px;
 }
@@ -953,7 +956,8 @@ footer .footer_bottom_content ul i {
   }
 
   .bg_1 {
-    top: 1900px;
+    top: 1050px;
+    height: 750px;
   }
   main .presentation .d_flex {
     justify-content: center;
